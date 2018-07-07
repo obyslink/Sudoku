@@ -7,8 +7,10 @@
     android:padding="10dip" >
     <TextView
         android:id="@+id/about_content"
+        android:gravity="center"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textColor="@color/defTexts"
+        android:textColor="@color/colorBlue"
+        android:layout_marginTop="30dp"
         android:text="@string/about_text" />
 </ScrollView>

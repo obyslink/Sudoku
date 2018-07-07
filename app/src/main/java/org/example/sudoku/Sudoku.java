@@ -13,6 +13,8 @@ import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.util.Log;
 
+import com.rey.material.widget.Button;
+
 
 public class Sudoku extends Activity implements OnClickListener {
 
@@ -24,13 +26,13 @@ public class Sudoku extends Activity implements OnClickListener {
         setContentView(R.layout.main);
 
         // Set up click listeners for all the buttons
-        View continueButton = findViewById(R.id.continue_button);
+        Button continueButton = findViewById(R.id.continue_button);
         continueButton.setOnClickListener(this);
-        View newButton = findViewById(R.id.new_button);
+        Button newButton = findViewById(R.id.new_button);
         newButton.setOnClickListener(this);
-        View aboutButton = findViewById(R.id.about_button);
+        Button aboutButton = findViewById(R.id.about_button);
         aboutButton.setOnClickListener(this);
-        View exitButton = findViewById(R.id.exit_button);
+        Button exitButton = findViewById(R.id.exit_button);
         exitButton.setOnClickListener(this);
 
     }
