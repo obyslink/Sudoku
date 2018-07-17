@@ -1,4 +1,4 @@
-package org.example.sudoku;
+package tech.dappworld.sudoku;
 
 /**
  * Created by User on 7/21/2017.
@@ -9,6 +9,8 @@ import android.os.Bundle;
 import android.preference.PreferenceActivity;
 import android.preference.PreferenceManager;
 import android.widget.Toast;
+
+import tech.dappworld.sudoku.R;
 
 public class Prefs extends PreferenceActivity {
 

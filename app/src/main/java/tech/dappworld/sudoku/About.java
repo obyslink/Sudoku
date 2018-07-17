@@ -1,4 +1,4 @@
-package org.example.sudoku;
+package tech.dappworld.sudoku;
 
 /**
  * Created by User on 7/21/2017.
@@ -6,6 +6,8 @@ package org.example.sudoku;
 
 import android.app.Activity;
 import android.os.Bundle;
+
+import tech.dappworld.sudoku.R;
 
 
 public class About extends Activity {

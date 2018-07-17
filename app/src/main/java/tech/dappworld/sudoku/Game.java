@@ -1,4 +1,4 @@
-package org.example.sudoku;
+package tech.dappworld.sudoku;
 
 /**
  * Created by User on 7/21/2017.
@@ -10,6 +10,8 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.Gravity;
 import android.widget.Toast;
+
+import tech.dappworld.sudoku.R;
 
 public class Game extends Activity {
     private static final String PREF_PUZZLE = "puzzle" ;

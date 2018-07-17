@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="org.example.sudoku">
+    package="tech.dappworld.sudoku">
 
 
     <application
@@ -10,7 +10,7 @@
         android:roundIcon="@mipmap/ic_launcher"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Sudoku"
+        <activity android:name="tech.dappworld.sudoku.Sudoku"
                   android:screenOrientation="landscape">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -18,14 +18,16 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".About"
+        <activity android:name="tech.dappworld.sudoku.About"
             android:label="@string/about_title"
-            android:theme="@android:style/Theme.Dialog">
+            android:theme="@android:style/Theme.Dialog"
+            android:screenOrientation="landscape">
         </activity>
-        <activity android:name=".Prefs"
+        <activity android:name="tech.dappworld.sudoku.Prefs"
+            android:screenOrientation="landscape"
             android:label="@string/settings_title" >
         </activity>
-        <activity android:name=".Game"
+        <activity android:name="tech.dappworld.sudoku.Game"
             android:screenOrientation="landscape"
             android:label="@string/game_title" >
         </activity>

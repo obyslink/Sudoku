@@ -1,4 +1,4 @@
-package org.example.sudoku;
+package tech.dappworld.sudoku;
 
 import org.junit.Test;
 

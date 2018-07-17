@@ -7,7 +7,7 @@
     <string name="about_label">About</string>
     <string name="exit_label">Exit</string>
     <string name="about_title">About DaSudoku</string>
-    <string name="about_text">DaSudoku 1.0 is a logic-based number placement puzzle.
+    <string name="about_text">DaSudoku 1.1 is a logic-based number placement puzzle.
                             Starting with a partially completed 9x9 grid, the
                             objective is to fill the grid so that each
                             row, each column, and each of the 3x3 boxes
@@ -28,4 +28,7 @@
     <string name="game_title">Game</string>
     <string name="no_moves_label">No moves</string>
     <string name="keypad_title">Keypad</string>
+    <string name="share">Share</string>
+    <string name="share_shortcut">p</string>
+    <string name="text_share_app">Share App</string>
 </resources>

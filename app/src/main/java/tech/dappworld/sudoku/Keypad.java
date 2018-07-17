@@ -1,4 +1,4 @@
-package org.example.sudoku;
+package tech.dappworld.sudoku;
 
 /**
  * Created by User on 7/21/2017.
@@ -9,6 +9,8 @@ import android.content.Context;
 import android.os.Bundle;
 import android.view.KeyEvent;
 import android.view.View;
+
+import tech.dappworld.sudoku.R;
 
 public class Keypad extends Dialog {
     protected static final String TAG = "Sudoku" ;

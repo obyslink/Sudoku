@@ -1,7 +1,6 @@
-package org.example.sudoku;
+package tech.dappworld.sudoku;
 
 import android.app.Activity;
-import android.content.res.Configuration;
 import android.os.Bundle;
 import android.content.Intent;
 import android.view.View;
@@ -14,6 +13,8 @@ import android.content.DialogInterface;
 import android.util.Log;
 
 import com.rey.material.widget.Button;
+
+import tech.dappworld.sudoku.R;
 
 
 public class Sudoku extends Activity implements OnClickListener {
@@ -71,6 +72,27 @@ public class Sudoku extends Activity implements OnClickListener {
             case R.id.settings:
                 startActivity(new Intent(this, Prefs.class));
                 return true;
+            case R.id.share:
+                Intent sendIntent = new Intent();
+                sendIntent.setAction(Intent.ACTION_SEND);
+                sendIntent
+                        .putExtra(
+                                Intent.EXTRA_TEXT,
+                                "I am playing "
+                                        + getString(R.string.app_name)
+                                        + " Game ! Why don't you try it out...\nInstall "
+                                        + getString(R.string.app_name)
+                                        + " now !\nhttps://play.google.com/store/apps/details?id="
+                                        + getPackageName());
+                sendIntent.putExtra(android.content.Intent.EXTRA_SUBJECT,
+                        getString(R.string.app_name) + " App !");
+                sendIntent.setType("text/plain");
+
+                startActivity(Intent.createChooser(sendIntent,
+                        getString(R.string.text_share_app)));
+
+                return true;
+
 // More items go here (if any) ...
         }
         return false;
